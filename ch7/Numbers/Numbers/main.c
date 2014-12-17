@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     unsigned long z = 255;
     printf("z is %lu \n", z);
     // Octal and hex already assume the number was unsigned
-    printf("In octal, y is %lo \n", y);
-    printf("In hexadecimal, y is %lx \n", y);
+    printf("In octal, z is %lo \n", z);
+    printf("In hexadecimal, z is %lx \n", z);
     return 0;
 }
