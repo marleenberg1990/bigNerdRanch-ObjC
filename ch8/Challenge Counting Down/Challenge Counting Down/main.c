@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         printf("%d \n", i);
         
         if (i % 5 == 0) { // check if i divisible by 5
-            printf("Found one \n");
+            printf("Found one! \n");
         }
         
     }
