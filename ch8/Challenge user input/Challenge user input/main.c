@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include <readline/readline.h> //don't forget to include this header file
+#include <readline/readline.h> 
 #include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
@@ -17,20 +17,17 @@ int main(int argc, const char * argv[]) {
     const char *name = readline(NULL);
     printf("%s is cool \n\n", name);
     
+    
     //PT2
-    
-    int i;
-    
     printf("Where should I start counting? ");
-   const char *startCount = readline(NULL);
+    const char *startCount = readline(NULL);
    
-    for (i = atoi(startCount); i >= 0; i = i - 3) {
+    for (int i = atoi(startCount); i >= 0; i-=3) {
         printf("%d \n", i);
         
-        if (i % 5 == 0) { // check if i divisible by 5
+        if (i % 5 == 0) {
             printf("Found one! \n");
         }
-        
     }
     return 0;
 }
