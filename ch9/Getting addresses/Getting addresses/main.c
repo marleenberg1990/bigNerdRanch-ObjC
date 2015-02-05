@@ -15,5 +15,7 @@ int main(int argc, const char * argv[]) {
     printf("This function starts at %p \n", main);
     printf("i stores its value %p \n", addressOfI);
     printf("The int stored at addressOfI is %d \n", *addressOfI);
+    *addressOfI = 89;
+    printf("Now i is %d\n", i);
     return 0;
 }
